@@ -13,6 +13,17 @@ body {
     font-size: 20px;
 }
 
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+
 /* 卡片容器 */
 .container {
     background: white;
