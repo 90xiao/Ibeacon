@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-size: 20px;
+}
+
+/* 卡片容器 */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* 標題 */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* 按鈕 */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 選項 */
+.option {
+    display: block;
+    margin: 15px 0;
+    text-align: left;
+}
+
+/* 彈出視窗 */
+.modal-content {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    min-width: 220px;
+    transition: 0.3s;
+}
+
+/* 成功（綠色） */
+.modal-success {
+    background: #2ecc71;
+}
+
+/* 錯誤（紅色） */
+.modal-error {
+    background: #ff4d4d;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 警告頁 */
+.warning-page {    /* 頁面背景 */
+    background: #ff4d4d;
+}
+.warning {    /* 文字框背景 */
+    background: #ff0000;
+    color: white;
+}
+
+/* RWD */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

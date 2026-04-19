@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>是非題</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>是非題</h2>
+    <p>地球是平的？</p>
+
+    <button onclick="checkTF(true)">是</button>
+    <button onclick="checkTF(false)">否</button>
+</div>
+
+<!-- modal -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <p id="modalText"></p>
+        <button onclick="closeModal()">確定</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

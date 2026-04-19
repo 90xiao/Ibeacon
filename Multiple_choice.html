@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>選擇題</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>選擇題</h2>
+    <p>1 + 1 = ?</p>
+
+    
+    <label class="option">
+        <input type="radio" name="q1" value="1"> 1
+    </label>
+    <label class="option">
+        <input type="radio" name="q1" value="2"> 2
+    </label>
+    <label class="option">
+        <input type="radio" name="q1" value="3"> 3
+    </label>
+
+    <button onclick="checkMCQ()">提交</button>
+</div>
+
+<!-- modal -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <p id="modalText"></p>
+        <button onclick="closeModal()">確定</button>
+    </div>
+</div>
+
+
+<script src="script.js">
+// function checkAnswer() {
+//     let answer = document.querySelector('input[name="q1"]:checked');
+
+//     if (!answer) {
+//         alert("請選擇答案");
+//         return;
+//     }
+
+//     if (answer === false) {
+//         alert("⭕答對了！");
+//     } else {
+//         alert("❌答錯了");
+//     }
+// }
+</script>
+
+</body>
+</html>
